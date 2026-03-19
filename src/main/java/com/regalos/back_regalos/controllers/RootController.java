@@ -16,9 +16,9 @@ public class RootController {
     @Operation(summary = "Verifica que el servidor esté vivo y funcionando")
     public Map<String, String> getStatus() {
         Map<String, String> status = new HashMap<>();
-        status.put("status", "UP");
-        status.put("message", "API de Tienda de Regalos corriendo correctamente");
-        status.put("docs", "/swagger-ui.html");
+        status.put("health", "UP");
+        status.put("api_docs", "/swagger-ui.html");
+        status.put("api_specs", "/v3/api-docs");
         return status;
     }
 }
