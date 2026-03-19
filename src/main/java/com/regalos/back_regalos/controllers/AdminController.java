@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/admin")
@@ -33,7 +32,6 @@ public class AdminController {
     private final AppUserRepository userRepository;
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
-    private final StoreSettingRepository storeSettingRepository;
 
     @GetMapping("/reports/financial")
     @Operation(summary = "Genera un resumen financiero filtrado por fechas")

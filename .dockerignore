@@ -1,0 +1,20 @@
+# Ignore local build artifacts
+build/
+bin/
+out/
+.gradle/
+.idea/
+.vscode/
+
+# Ignore source control
+.git/
+.gitignore
+.gitattributes
+
+# Ignore other non-essential files
+README.md
+HELP.md
+*.log
+docker-compose*.yml
+Dockerfile
+.dockerignore
