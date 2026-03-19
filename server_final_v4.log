@@ -1,0 +1,51 @@
+Starting a Gradle Daemon, 5 busy Daemons could not be reused, use --status for details
+> Task :clean
+
+> Task :compileJava
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\config\DataInitializer.java:39: error: no suitable constructor found for Role(<null>,String,String,boolean,<null>,<null>)
+            roleRepository.save(new Role(null, "SUPER_ADMIN", "Administrador total del sistema", true, null, null));
+                                ^
+    constructor Role.Role() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Role.Role(Long,String,String,Boolean,LocalDateTime,LocalDateTime,Set<Permission>) is not applicable
+      (actual and formal argument lists differ in length)
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\config\DataInitializer.java:40: error: no suitable constructor found for Role(<null>,String,String,boolean,<null>,<null>)
+            roleRepository.save(new Role(null, "CLIENTE", "Cliente registrado", true, null, null));
+                                ^
+    constructor Role.Role() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Role.Role(Long,String,String,Boolean,LocalDateTime,LocalDateTime,Set<Permission>) is not applicable
+      (actual and formal argument lists differ in length)
+2 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///D:/Documentos/Accelwolf/Downloads/Tienda/back-regalos/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\config\DataInitializer.java:39: error: no suitable constructor found for Role(<null>,String,String,boolean,<null>,<null>)
+              roleRepository.save(new Role(null, "SUPER_ADMIN", "Administrador total del sistema", true, null, null));
+                                  ^
+      constructor Role.Role() is not applicable
+        (actual and formal argument lists differ in length)
+      constructor Role.Role(Long,String,String,Boolean,LocalDateTime,LocalDateTime,Set<Permission>) is not applicable
+        (actual and formal argument lists differ in length)
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\config\DataInitializer.java:40: error: no suitable constructor found for Role(<null>,String,String,boolean,<null>,<null>)
+              roleRepository.save(new Role(null, "CLIENTE", "Cliente registrado", true, null, null));
+                                  ^
+      constructor Role.Role() is not applicable
+        (actual and formal argument lists differ in length)
+      constructor Role.Role(Long,String,String,Boolean,LocalDateTime,LocalDateTime,Set<Permission>) is not applicable
+        (actual and formal argument lists differ in length)
+  2 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 17s
+2 actionable tasks: 2 executed

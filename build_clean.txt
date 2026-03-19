@@ -1,0 +1,53 @@
+﻿> Task :clean
+
+> Task :compileJava
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\models\DeliveryCity.java:32: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Boolean isActive = true;
+                    ^
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\models\DeliveryCity.java:35: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private LocalDateTime createdAt = LocalDateTime.now();
+                          ^
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\models\DeliveryCity.java:38: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private LocalDateTime updatedAt = LocalDateTime.now();
+                          ^
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\services\OrderService.java:120: error: cannot find symbol
+        OrderStatus initialStatus = statusRepository.findAllByIsActiveOrderByDisplayOrderAsc(true).get(0);
+                                                    ^
+  symbol:   method findAllByIsActiveOrderByDisplayOrderAsc(boolean)
+  location: variable statusRepository of type OrderStatusRepository
+1 error
+3 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///D:/Documentos/Accelwolf/Downloads/Tienda/back-regalos/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\models\DeliveryCity.java:32: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+      private Boolean isActive = true;
+                      ^
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\models\DeliveryCity.java:35: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+      private LocalDateTime createdAt = LocalDateTime.now();
+                            ^
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\models\DeliveryCity.java:38: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+      private LocalDateTime updatedAt = LocalDateTime.now();
+                            ^
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\services\OrderService.java:120: error: cannot find symbol
+          OrderStatus initialStatus = statusRepository.findAllByIsActiveOrderByDisplayOrderAsc(true).get(0);
+                                                      ^
+    symbol:   method findAllByIsActiveOrderByDisplayOrderAsc(boolean)
+    location: variable statusRepository of type OrderStatusRepository
+  1 error
+  3 warnings
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 3s
+2 actionable tasks: 2 executed
+

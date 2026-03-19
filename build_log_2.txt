@@ -1,0 +1,30 @@
+> Task :clean
+
+> Task :compileJava FAILED
+D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\services\OrderService.java:120: error: cannot find symbol
+        OrderStatus initialStatus = statusRepository.findAllByIsActiveOrderByDisplayOrderAsc(true).get(0);
+                                                    ^
+  symbol:   method findAllByIsActiveOrderByDisplayOrderAsc(boolean)
+  location: variable statusRepository of type OrderStatusRepository
+1 error
+
+[Incubating] Problems report is available at: file:///D:/Documentos/Accelwolf/Downloads/Tienda/back-regalos/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  D:\Documentos\Accelwolf\Downloads\Tienda\back-regalos\src\main\java\com\regalos\back_regalos\services\OrderService.java:120: error: cannot find symbol
+          OrderStatus initialStatus = statusRepository.findAllByIsActiveOrderByDisplayOrderAsc(true).get(0);
+                                                      ^
+    symbol:   method findAllByIsActiveOrderByDisplayOrderAsc(boolean)
+    location: variable statusRepository of type OrderStatusRepository
+  1 error
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 3s
+2 actionable tasks: 2 executed
