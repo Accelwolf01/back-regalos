@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/orders")
 @RequiredArgsConstructor
 @Tag(name = "Pedidos y Pagos", description = "Endpoints para el flujo de compra y Bold")
-@CrossOrigin(origins = "*")
 public class OrderController {
 
     private final OrderService orderService;

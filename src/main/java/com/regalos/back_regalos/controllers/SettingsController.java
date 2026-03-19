@@ -17,11 +17,24 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/settings")
 @RequiredArgsConstructor
 @Tag(name = "Ajustes", description = "Configuración de la tienda y banners")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SettingsController {
 
     private final StoreSettingRepository settingRepository;
     private final StoreBannerRepository bannerRepository;
+
+    @GetMapping
+    @Operation(summary = "Obtiene todas las configuraciones de la tienda")
+    public ResponseEntity<List<StoreSetting>> getAll() {
+        return ResponseEntity.ok(settingRepository.findAll());
+    }
+
+    @GetMapping("/{key}")
+    @Operation(summary = "Obtiene una configuración específica por su clave")
+    public ResponseEntity<StoreSetting> getByKey(@PathVariable String key) {
+        return settingRepository.findByConfigKey(key)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
 
     @GetMapping("/public")
     @Operation(summary = "Obtiene configuraciones públicas")

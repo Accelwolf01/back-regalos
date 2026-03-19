@@ -19,7 +19,6 @@ import java.util.Map;
 @RequestMapping("/api/admin")
 @RequiredArgsConstructor
 @Tag(name = "Administración", description = "Endpoints para finanzas y control administrativo")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AdminController {
 
     private final OrderRepository orderRepository;
