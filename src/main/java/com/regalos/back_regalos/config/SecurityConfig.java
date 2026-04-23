@@ -85,6 +85,7 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(Arrays.asList(
             "https://front-regalos.onrender.com", 
             "https://front-regalos-k3sq.onrender.com",
+            "https://front-regalos1.vercel.app",
             "http://localhost:5173"
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
